@@ -1,0 +1,279 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap");
+* {
+  font-size: 15px;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: #2c2c2c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  max-width: 1440px;
+  max-height: 100%;
+  background-image: url(./images/bg-pattern-top-desktop.svg), url(./images/bg-pattern-bottom-desktop.svg);
+  background-repeat: no-repeat;
+  background-color: hsl(0deg, 0%, 100%);
+  padding: 7rem;
+}
+
+.socialProofComponent {
+  overflow: scroll;
+  max-width: 1440px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 2rem;
+}
+.socialProofComponent header {
+  max-width: 50%;
+}
+.socialProofComponent header h1 {
+  font-family: "League Spartan";
+  font-weight: 700;
+  font-size: 4rem;
+  color: hsl(300deg, 43%, 22%);
+  padding: 2rem 0;
+  max-width: 70%;
+}
+.socialProofComponent header h2 {
+  font-family: "League Spartan";
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: hsl(300deg, 43%, 22%);
+  line-height: 1.6;
+  max-width: 80%;
+}
+.socialProofComponent .ratingContainer p {
+  color: hsl(300deg, 43%, 22%);
+  font-family: "League Spartan";
+  font-weight: 700;
+}
+.socialProofComponent .ratingContainer .ratedCards {
+  margin-right: 9rem;
+}
+.socialProofComponent .ratingContainer .ratedCards .rank {
+  width: 100%;
+  background-color: hsl(300deg, 24%, 96%);
+  border: 0.6rem solid hsl(300deg, 24%, 96%);
+  box-shadow: 1px 1px 0.6rem hsl(300deg, 24%, 96%);
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 1rem;
+  gap: 2rem;
+}
+.socialProofComponent .ratingContainer .ratedCards .reportedGuru {
+  margin-left: 4rem;
+}
+.socialProofComponent .ratingContainer .ratedCards .bestTech {
+  margin-left: 8rem;
+}
+
+.socialFeedbackCards {
+  max-width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.socialFeedbackCards .roberts {
+  margin: 1rem;
+  margin-top: 5rem;
+}
+.socialFeedbackCards .wallace {
+  margin-top: 8rem;
+}
+.socialFeedbackCards .feedbackCard {
+  background-color: hsl(300deg, 43%, 22%);
+  color: hsl(0deg, 0%, 100%);
+  border-radius: 1rem;
+  padding: 1rem;
+}
+.socialFeedbackCards .feedbackCard .profilePhoto {
+  font-family: "League Spartan";
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+}
+.socialFeedbackCards .feedbackCard .profilePhoto img {
+  border-radius: 50%;
+  margin: 1rem;
+  max-width: 2.9rem;
+}
+.socialFeedbackCards .feedbackCard .profilePhoto .profileDescription {
+  padding-left: 1rem;
+}
+.socialFeedbackCards .feedbackCard .profilePhoto .profileDescription .profileName {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+.socialFeedbackCards .feedbackCard .profilePhoto .profileDescription .profileStatus {
+  font-size: 1.3rem;
+  color: hsl(333deg, 80%, 67%);
+}
+.socialFeedbackCards .feedbackCard .feedback {
+  font-family: "League Spartan";
+  font-weight: 400;
+  font-size: 1.1rem;
+  padding: 1rem;
+  line-height: 1.6;
+}
+
+footer {
+  max-width: 100vw;
+  text-align: center;
+  font-family: "League Spartan";
+  font-weight: 700;
+}
+
+@media only screen and (max-width: 880px) {
+  * {
+    font-size: 15px;
+    padding: 0;
+    margin: 0;
+    margin-right: 0;
+    margin-left: 0;
+    box-sizing: border-box;
+  }
+  body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #2c2c2c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container {
+    width: 375px;
+    background-image: url(./images/bg-pattern-top-mobile.svg), url(./images/bg-pattern-bottom-mobile.svg);
+    background-repeat: no-repeat;
+    background-color: hsl(0deg, 0%, 100%);
+    padding: 0.1rem;
+    overflow: scroll;
+  }
+  .socialProofComponent {
+    overflow: scroll;
+    max-width: 375px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0.1rem;
+  }
+  .socialProofComponent header {
+    max-width: 100%;
+    text-align: center;
+  }
+  .socialProofComponent header h1 {
+    font-family: "League Spartan";
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: hsl(300deg, 43%, 22%);
+    max-width: 100%;
+    padding: 5rem 2rem 1rem 2rem;
+  }
+  .socialProofComponent header h2 {
+    font-family: "League Spartan";
+    font-weight: 400;
+    font-size: 1.2rem;
+    color: hsl(300deg, 43%, 22%);
+    line-height: 1.4;
+    max-width: 100%;
+    padding: 1rem;
+  }
+  .socialProofComponent .ratingContainer {
+    width: 100%;
+  }
+  .socialProofComponent .ratingContainer p {
+    color: hsl(300deg, 43%, 22%);
+    font-family: "League Spartan";
+    font-weight: 700;
+  }
+  .socialProofComponent .ratingContainer img {
+    padding: 0.2rem;
+  }
+  .socialProofComponent .ratingContainer .ratedCards {
+    margin: 2rem 1rem;
+  }
+  .socialProofComponent .ratingContainer .ratedCards .rank {
+    width: 100%;
+    background-color: hsl(300deg, 24%, 96%);
+    border: 0.6rem solid hsl(300deg, 24%, 96%);
+    box-shadow: 1px 1px 0.6rem hsl(300deg, 24%, 96%);
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: center;
+    border-radius: 0.5rem;
+    gap: 1rem;
+    padding: 0.5rem;
+  }
+  .socialProofComponent .ratingContainer .ratedCards .reviewaRated {
+    margin-left: 0;
+  }
+  .socialProofComponent .ratingContainer .ratedCards .reportedGuru {
+    margin-left: 0;
+  }
+  .socialProofComponent .ratingContainer .ratedCards .bestTech {
+    margin-left: 0;
+  }
+  .socialFeedbackCards {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .socialFeedbackCards .fourRemMarginTop {
+    margin-top: 0;
+  }
+  .socialFeedbackCards .eightRemMarginTop {
+    margin-top: 0;
+  }
+  .socialFeedbackCards .feedbackCard {
+    background-color: hsl(300deg, 43%, 22%);
+    color: hsl(0deg, 0%, 100%);
+    border-radius: 1rem;
+    margin: 1rem;
+    padding: 1.5rem;
+  }
+  .socialFeedbackCards .feedbackCard .profilePhoto {
+    font-family: "League Spartan";
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+  }
+  .socialFeedbackCards .feedbackCard .profilePhoto img {
+    border-radius: 50%;
+    margin: 1rem;
+    max-width: 2.9rem;
+  }
+  .socialFeedbackCards .feedbackCard .profilePhoto .profileDescription {
+    padding-left: 1rem;
+  }
+  .socialFeedbackCards .feedbackCard .profilePhoto .profileDescription .profileName {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+  }
+  .socialFeedbackCards .feedbackCard .profilePhoto .profileDescription .profileStatus {
+    font-size: 1.1rem;
+    color: hsl(333deg, 80%, 67%);
+  }
+  .socialFeedbackCards .feedbackCard .feedback {
+    font-family: "League Spartan";
+    font-weight: 400;
+    font-size: 1.1rem;
+    padding: 1rem;
+    line-height: 1.6;
+  }
+}/*# sourceMappingURL=style.css.map */
